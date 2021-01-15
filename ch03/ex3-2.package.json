@@ -1,0 +1,5 @@
+// 목록 3.2 테스트 스크립트
+
+"scripts": {
+   "test": "run-local-lambda --file index.js --event tests/event.json"
+}

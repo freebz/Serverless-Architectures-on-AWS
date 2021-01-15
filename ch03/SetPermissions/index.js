@@ -1,0 +1,23 @@
+// 목록 3.6 S3 객체의 ACL 변경
+
+"use strict";
+var AWS = require('aws-sdk');
+var s3 = new AWS.S3();
+exports.handler = function(event, context, callback){
+   var message = JSON.parse(event.Records[0].Sns.Message);
+
+   var sourceBucket = message.Records[0].s3.bucket.name;
+   var sourceKey = decodeURIComponent(message.Records[0].s3.object.key.replace(/\+/g, " "));
+
+   var params = {
+      Bucket: sourceBucket,
+      Key: sourceKey,
+      ACL: 'public-read'
+   };
+
+   s3.putObjectAcl(params, function(err, data){
+      if (err){
+	 callback(err);
+      }
+   });
+};
