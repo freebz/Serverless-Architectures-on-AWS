@@ -1,0 +1,19 @@
+// 목록 4.4 HTTPS/SSL을 강제하는 정책
+
+{
+   "Version": "2012-10-17",
+   "Id": "123",
+   "Statement": [
+      {
+	 "Effect": "Deny",
+	 "Principal": "*",
+	 "Action": "s3:*",
+	 "Resource": "arn:aws:s3:::my-bucket/*",
+	 "Condition": {
+	    "Bool": {
+	       "aws:SecureTransport": false
+	    }
+	 }
+      }
+   ]
+}
