@@ -1,0 +1,5 @@
+// 목록 5.9 토큰에 대한 매핑 템플릿
+
+{
+    "authToken" : "$input.params('Authorization')"
+}

@@ -1,0 +1,12 @@
+/* 목록 5.6 main.css의 내용 */
+
+#auth0-ogout {
+    display: none;
+}
+#user-profile {
+    display: none;
+}
+#profilepicture {
+    height: 20px;
+    width: 20px;
+}

@@ -1,0 +1,19 @@
+// 목록 5.7 user-profile Lambda 함수에 대한 package.json
+
+{
+  "name": "user-profile",
+  "version": "1.0.0",
+  "description": "This Lambda function returns the current user-profile",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "aws lambda update-function-code --function-name user-profile --zip-file fileb://Lambda-Deployment.zip --region ap-northeast-1",
+    "predeploy": "zip -r Lambda-Deployment.zip * -x *.zip *.json *.log"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {},
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "request": "^2.88.2"
+  }
+}

@@ -1,0 +1,20 @@
+// 목록 5.1 웹 사이트용 package.json
+
+{
+    "name": "24-hour-video",
+    "version": "1.0.0",
+    "description": "The 24 Hour Video Website",
+    "local-web-server": {
+	"part": 8100,
+	"forbid": "*.json"
+    },
+    "scripts": {
+	"start": "ws",
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Peter Sbarski",
+    "licence": "BSD-2-Clause",
+    "devDependencies": {
+	"local-web-server": "^1.2.6"
+    }
+}
