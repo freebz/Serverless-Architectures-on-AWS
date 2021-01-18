@@ -1,0 +1,10 @@
+// 목록 6.10 부하 테스트 구성 예제
+
+{
+  "operation": "load",
+  "iterations": 50,
+  "function": "get-video-list",
+  "resultsTable": "unit-test-results",
+  "testId": "MyTestRun",
+  "event": {}
+}

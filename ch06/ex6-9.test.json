@@ -1,0 +1,9 @@
+// 목록 6.9 단위 테스트 구성의 예
+
+{
+  "operation": "unit",
+  "function": "get-video-list",
+  "resultsTable": "unit-test-results",
+  "testId": "MyTestRun",
+  "event": {}
+}
