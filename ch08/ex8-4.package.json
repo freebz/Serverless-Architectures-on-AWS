@@ -1,0 +1,7 @@
+// 목록 8.4 Lambda 함수의 의존성 설정
+
+"dependencies": {
+  "async": "^2.0.0",
+  "aws-sdk": "^2.3.2",
+  "crypto": "0.0.3",
+}

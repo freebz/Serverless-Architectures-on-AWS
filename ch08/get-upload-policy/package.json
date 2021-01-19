@@ -1,0 +1,26 @@
+{
+  "name": "get-upload-policy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create": "aws lambda create-function --function-name get-upload-policy --handler index.handler --memory-size 128 --runtime nodejs12.x --role arn:aws:iam::542416706327:role/lambda-s3-execution-role --timeout 3 --publish --zip-file fileb://Lambda-Deployment.zip --region ap-northeast-1",
+    "deploy": "aws lambda update-function-code --function-name get-upload-policy --zip-file fileb://Lambda-Deployment.zip --region ap-northeast-1",
+    "precreate": "zip -r Lambda-Deployment.zip * -x *.zip *.json *.log",
+    "predeploy": "zip -r Lambda-Deployment.zip * -x *.zip *.json *.log",
+    "test": "run-local-lambda --file index.js"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "aws-sdk": "^2.3.2",
+    "crypto": "0.0.3"
+  },
+  "author": "Peter Sbarski",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "rewire": "^5.0.0",
+    "run-local-lambda": "^1.1.1",
+    "sinon": "^9.2.3"
+  }
+}

@@ -1,0 +1,10 @@
+// 목록 8.6 S3 CORS 설정
+
+[
+  {
+    "AllowedHeaders": ["*"],
+    "AllowedOrigins": ["*"],
+    "AllowedMethods": ["POST"],    
+    "MaxAgeSeconds": 3000
+  }
+]
