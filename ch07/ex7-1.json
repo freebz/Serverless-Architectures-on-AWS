@@ -1,0 +1,61 @@
+// 목록 7.1 입력 이벤트 파라미터
+
+{
+  resource: '/videos',
+  path: '/videos',
+  httpMethod: 'GET',
+  headers: {
+    Accept: '*/*',
+    'Accept-Encoding': 'gzip, deflate, sdch, br',
+    'Accept-Language': 'en-US,en;q=0.8',
+    Authorization: 'Bearer eyJ0eXK...',
+    'Cache-Control': 'no-cache',
+    'CloudFront-Forwarded-Proto': 'https',
+    'CloudFront-Is-desktop-Viewer': 'true',
+    'CloudFront-Is-Mobile-Viewer': 'false',
+    'CloudFront-Is-SmartTV-Viewer': 'false',
+    'CloudFront-Is-Tablet-Viewer': 'false',
+    'CloudFront-Viewer-Country': 'AU',
+    DNT: '1',
+    Host: 'bl5mn437o0.execute-api.us-east-1.amazonaws.com',
+    Origin: 'http://127.0.0.1:8100',
+    Pragma: 'no-cache',
+    Referer: 'http://127.0.0.1:8100/',
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebkit/537.36 (KHTML, like Gecko) Chrome/55.0 2883.95 Safari/537.36',
+    Via: '1.1 2d7b0cb3d.cloudfront.net (CloudFront)',
+    'X-Amz-Cf-Id': 'nbCkMUXzJFGVwkCGg7om97rzrS6n',
+    'X-Forwarded-For': '1.128.0.0, 120.147.162.170, 54.239.202.81',
+    'X-Forwarded-Port': '443',
+    'X-Forwarded-Proto': 'https'
+  },
+  queryStringParameters: {
+    encoding: '720p'
+  },
+  pathParameters: null,
+  stageVariables: {
+    function: 'get-video-list-dev'
+  },
+  requestContext: {
+    accountId: '038221756127',
+    resourceId: 'e3r6ou',
+    stage: 'dev',
+    requestId: '534bcd23-e536-11e6-805c-b1e540fbf5c7',
+    identity: {
+      cognitoIdentityPoolId: null,
+      accountId: null,
+      cognitoIdentityId: null,
+      caller: null,
+      apiKey: null,
+      sourceIp: '121.147.161.171',
+      accessKey: null,
+      cognitoAuthenticationType: null,
+      userArn: null,
+      userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+    },
+    resourcePath: '/videos',
+    httpMethod: 'GET',
+    apiId: 'tlzyo7a7o9'
+  },
+  body: null,
+  isBase64Encoded: false
+}

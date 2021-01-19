@@ -1,0 +1,7 @@
+// 목록 7.2 Lambda 출력 포맷
+
+{
+  "statusCode": httpStatusCode,
+  "headers": { "headerName": "headerValue", ... },
+  "body": "..."
+}
