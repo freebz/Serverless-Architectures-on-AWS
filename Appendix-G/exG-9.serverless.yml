@@ -1,0 +1,18 @@
+# 목록 G.9 함수 패키징 분리
+
+service: my-service
+package:
+  individually: true
+  exclude:
+    - excluded-by-default.json
+functions:
+  hello:
+    handler: handler.hello
+    package:
+    include:
+      - excluded-by-default.json
+  world:
+    handler: handler.hello
+    package:
+      exclude:
+        - event:json

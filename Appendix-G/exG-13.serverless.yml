@@ -1,0 +1,6 @@
+# 목록 G.13 플러그인 추가
+
+plugins:
+  - custom-serverless-plugin
+custom:
+  customkey: customvalue

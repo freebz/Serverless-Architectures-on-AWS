@@ -1,0 +1,7 @@
+# 목록 G.14 로드 순서
+
+# serverless.yml
+
+plubins:
+  - plugin1
+  - plugin2

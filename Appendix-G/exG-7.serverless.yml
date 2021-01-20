@@ -1,0 +1,6 @@
+# 목록 G.7 Exclude
+
+package:
+  exclude:
+    - node_modules/**
+    - "!node_modules/node-fetch/**"

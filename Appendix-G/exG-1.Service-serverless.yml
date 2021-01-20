@@ -1,0 +1,12 @@
+# 목록 G.1 Service-serverless.yml
+
+service: users
+
+function:
+usersCreate:
+  events:
+    - http: post users/create
+usersDelete:
+  events:
+    - http: delete users/delete
+resource:

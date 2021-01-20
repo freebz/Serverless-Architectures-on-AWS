@@ -1,0 +1,8 @@
+목록 G.4 애플리케이션 구조
+
+users/
+  serverless.yml
+posts/
+  serverless.yml
+comments/
+  serverless.yml

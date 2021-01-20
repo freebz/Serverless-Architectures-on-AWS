@@ -1,0 +1,5 @@
+# 목록 G.2 Plugins-serverless.yml
+
+plugins:
+  - serverless-offline
+  - serverless-secrets

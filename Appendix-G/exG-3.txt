@@ -1,0 +1,4 @@
+목록 G.3 애플리케이션 구조
+
+myApp/
+   serverless.yml

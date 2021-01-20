@@ -1,0 +1,38 @@
+# 목록 G.5 보다 완성된 serverless.yml 예제
+
+service: users
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  memorySize: 512
+
+functions:
+  usersCreate:
+    handler: index.create
+    events:
+      - http:
+          path: users/create
+          method: post
+  userDelete:
+    handler: index.delete
+    events:
+      - http:
+          path: users/delete
+          method: delete
+
+resource:
+  Resource:
+    usersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: usersTable
+        AttributeDefinitions:
+          - AttributeName: email
+            AttributeType: S
+        KeySchema:
+          - AttributeType: email
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1

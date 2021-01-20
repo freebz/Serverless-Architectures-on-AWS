@@ -1,0 +1,15 @@
+# 목록 G.19 간단한 REST API: serverless.yml
+
+service: serverless-simple-http-endpoint
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+
+functions:
+  currentTime:
+    handler: handler.endpoint
+    events:
+      - http:
+          path: ping
+          method: get

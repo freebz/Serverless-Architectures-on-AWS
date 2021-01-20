@@ -1,0 +1,11 @@
+# 목록 G.8 아티팩트
+
+service: my-service
+package:
+  include:
+    - lib
+    - functions
+  exclude:
+    - tmp
+    - .git
+artifact: path/to/my-artifact.zip

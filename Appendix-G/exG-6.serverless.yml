@@ -1,0 +1,7 @@
+# 목록 G.6 리전과 스테이지
+
+service: service-name
+provider:
+  name: aws
+  stage: beta
+  region: us-west-2
