@@ -1,0 +1,49 @@
+// 목록 10.1 Amazon State Language
+
+{
+  "Comment": "Using Amazon States Language using a parallel state to execute three branches at the same time",
+  "StartAt": "Parallel",
+  "States": {
+    "Parallel": {
+      "Type": "Parallel",
+      "Next": "Final State",
+      "Branches": [
+	{
+	  "StartAt": "Transform 1",
+	  "States": {
+	    "Transform 1": {
+	      "Type": "Task",
+	      "Resource": "<TRANSFORM FUNCTION 1 ARN>",
+	      "End": true
+	    }
+	  }
+	},
+	{
+	  "StartAt": "Transform 2",
+	  "States": {
+	    "Transform 2": {
+	      "Type": "Task",
+	      "Resource": "<TRANSFORM FUNCTION 2 ARN>",
+	      "End": true
+	    }
+	  }
+	},
+	{
+	  "StartAt": "Transform 3",
+	  "States": {
+	    "Transform 3": {
+	      "Type": "Task",
+	      "Resource": "<TRANSFORM FUNCTION 3 ARN>",
+	      "End": true
+	    }
+	  }
+	}
+      ]
+    },
+    "Final State": {
+      "Type": "Task",
+      "Resource": "<SEND NOTIFICATION FUNCTION ARN>",
+      "End": true
+    }
+  }
+}
