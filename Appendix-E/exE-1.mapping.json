@@ -1,0 +1,6 @@
+// 목록 E.1 URL 쿼리 문자열 매핑
+
+{
+  "encoding" :
+  "$input.params('encoding')"
+}
