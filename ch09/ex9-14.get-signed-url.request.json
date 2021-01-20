@@ -1,0 +1,6 @@
+// 목록 9.14 배치로 처리하기 위한 get-signed-url 요청의 본문
+
+[{"firebaseId":"0b18db4cbb4eca1a","key":"0b18db4cbb4eca1a/video-720p.mp4"},
+ {"firebaseId":"38b8c18c85ec686f","key":"38b8c18c85ec686f/video2-720p.mp4"},
+ {"firebaseId":"6ef3d6668789537e","key":"6ef3d6668780538e/video3-720p.mp4"},
+ {"firebaseId":"7b58d16bf1a1af6aa1","key":"7b58d16bf1a1af6aa1/video4-720p.ma4"}]

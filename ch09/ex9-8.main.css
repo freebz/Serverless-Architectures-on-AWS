@@ -1,0 +1,14 @@
+/* 목록 9.8 CSS 수정하기 */
+
+#loading-indicator {
+    margin: 90px auto;
+    display: block;
+}
+
+.transociding-indicator object {
+    margin-top: 30px;
+}
+
+body {
+    background: #1e1e1e;
+}

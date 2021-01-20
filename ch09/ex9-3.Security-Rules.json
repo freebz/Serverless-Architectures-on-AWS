@@ -1,0 +1,8 @@
+// 목록 9.3 Firebase 규칙
+
+{
+  "rules": {
+    ".read": "true",
+    ".write" : "auth != null"
+  }
+}

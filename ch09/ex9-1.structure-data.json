@@ -1,0 +1,23 @@
+// 목록 9.1 다-대-다 관계
+
+{
+  "users": {
+    "psbarski" : {
+      "name" : "Peter Sbarski",
+      "groups" : {
+	"serverlessheroes": true,
+	"acloudguru" : true
+      }
+    }
+  },
+  "groups" : {
+    "serverlessheroes" : {
+      "name" : "Serverless Heroes",
+      "members" : {
+	"psbarski" : true,
+	"acollins" : true,
+	"skroonenburg" : true
+      }
+    }
+  }
+}

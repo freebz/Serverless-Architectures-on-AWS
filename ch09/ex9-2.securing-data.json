@@ -1,0 +1,5 @@
+// 목록 9.2 Firebase 유효성 검사 규칙
+
+"$answer_id": {
+  ".validate": "newData.isNumber() && (newData.val() == -1 || newData.val() == 1)"
+}
